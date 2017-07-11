@@ -22,7 +22,6 @@ class TodoForm extends React.Component {
     return (e) => this.setState({ [field]: e.target.value});
   }
 
-
   render() {
     return (
       <div>
@@ -36,7 +35,9 @@ class TodoForm extends React.Component {
             value={this.state.title}>
           </input>
           </label>
+
           <br/>
+
           <label>Body
           <input
             type="text"
@@ -49,7 +50,9 @@ class TodoForm extends React.Component {
             type="hidden"
             value={this.state.done}>
           </input>
+
           <br/>
+          
           <button>Submit</button>
         </form>
       </div>
